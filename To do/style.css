@@ -1,0 +1,121 @@
+ *{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ body{
+       margin-top: 10vh;
+       height: 100vh;
+       background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+       
+      
+
+    }
+    
+    .container{
+        position: relative;
+        max-width: 900px;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+    .addtask{
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+    
+
+    }
+    .addtask > input[type="text"] 
+    {
+          width: 90%;
+          color: #333;
+          border: none;
+          border-bottom: 2px solid #666;
+          background: none;
+          padding: 10px;
+          font-size: 22px;
+          outline: none;
+          
+
+    }
+
+    .addtask button{
+        margin: 0 10px;
+        background:#222;
+        color: #fff;
+        width: 20%;
+        font-size: 22px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+
+    .addtask button:hover{
+        color: rgb(24, 19, 19);
+        background: rgb(232, 209, 209);
+    }
+    .notcompleted,.completed{
+        margin: 5px 0;
+        padding: 20px;
+
+    }
+    h3{
+        font-size:28px ;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+
+    ol{
+        list-style-type: none;
+        counter-reset: my-counter;
+    }
+    
+    ol li{
+        width: 100%;
+        padding: 18px;
+        margin: 5px 0;
+        background: #e969;
+        font-size: 22px;
+        counter-increment: my-counter;
+    }
+
+    ol.completed li{
+        background: #00ff62;
+    }
+
+    ol li::before{
+        content: counter(my-counter);
+        background: #231381;
+        width: 2rem;
+        height: 2rem;
+        border: 50%;
+        display: inline-block;
+        line-height: 2rem;
+        text-align: center;
+        color: #fff;
+        margin-right:0.5rem;
+    }
+
+    li button{
+
+        float: right;
+        padding: 5px;
+        font-size: 28px;
+        line-height: 28px;
+        margin-right: 15px;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    li button:hover{
+        cursor: pointer;
+    }
